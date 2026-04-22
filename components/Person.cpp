@@ -1,10 +1,8 @@
 #include <iostream>
 
-using namespace std;
-
 class Person {
     int id;
-    string name, email;
+    std::string name, email;
 
 public:
     int getId() const {
@@ -15,19 +13,19 @@ public:
         this->id = id;
     }
 
-    string getName() const {
+   std:: string getName() const {
         return this->name;
     }
 
-    void setName(string name) {
+    void setName(std::string name) {
         this->name = name;
     }
 
-    string getEmail() const {
+   std:: string getEmail() const {
         return this->email;
     }
 
-    void setEmail(string email) {
+    void setEmail(std::string email) {
         this->email = email;
     }
 
