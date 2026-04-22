@@ -1,6 +1,6 @@
 #include <iostream>
 
-std::string RandomNumberGenerator() {
+std::string GenerateAlphaNumericCode() {
     srand(time(0));
 
     std::string generatedNumber = "";
