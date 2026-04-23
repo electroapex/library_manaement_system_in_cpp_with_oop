@@ -1,12 +1,13 @@
 #include "header_files/json.hpp"
-#include "components/Person.cpp"
+#include "components/Student.cpp"
 #include  "utlis/AlphaNumericCodeGenerator.cpp"
+#include  "utlis/UIDGenerator.cpp"
 
 using json = nlohmann::json;
 #include <iostream>
 
 int main() {
-   std::cout <<  AlphaNumericCodeGenerator();
+   std::cout <<  rand() << std::endl;
 
    return 0;
 }

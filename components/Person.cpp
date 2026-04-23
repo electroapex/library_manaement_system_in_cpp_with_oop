@@ -2,7 +2,7 @@
 
 class Person {
     int id;
-    std::string name, email;
+    std::string name, email, uid;
 
 public:
     int getId() const {
@@ -13,7 +13,15 @@ public:
         this->id = id;
     }
 
-   std:: string getName() const {
+    std::string getUid() const {
+        return this->uid;
+    };
+
+    void setUid(std::string uid) {
+        this->uid = uid;
+    }
+
+    std::string getName() const {
         return this->name;
     }
 
@@ -21,7 +29,7 @@ public:
         this->name = name;
     }
 
-   std:: string getEmail() const {
+    std::string getEmail() const {
         return this->email;
     }
 
